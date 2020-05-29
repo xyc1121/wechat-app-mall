@@ -29,30 +29,33 @@
 }
 
 .search {
-  position: absolute;
-  top: 32rpx;
-  left: 25rpx;
+  /*position: absolute;*/
+  top: 365rpx;
+  left: 55rpx;
   width: 700rpx;
-  height: 66rpx;
+  height: 60rpx;
   display: block;
   box-sizing: border-box;
+  margin-top: 15rpx;
+  margin-left: 25rpx;
+  font-size: 25rpx;
 }
 .search input {
   display: block;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(250, 172, 172, 0.8);
   border: 1rpx solid #e3e3e3;
   width: 700rpx;
-  height: 66rpx;
+  height: 50rpx;
   border-radius: 30rpx;
   padding-left: 32rpx; 
 }
 .search image {
-  width: 35rpx;
-  height: 35rpx;
+  width: 30rpx;
+  height: 30rpx;
   position: absolute;
-  top: 16rpx;
-  right: 32rpx;
+  top: 462rpx;
+  right: 45rpx;
   z-index: 99;
 }
 .goodsDynamic {
@@ -91,7 +94,7 @@
   display: flex;
   box-sizing: border-box;
   width: 100vw;
-  height: 88rpx;
+  height: 60rpx;
   line-height: 88rpx;
   justify-content: space-between;
   align-items: center;
@@ -153,7 +156,6 @@
 .category-title{
   font-size: 24rpx;
   text-align:center;
-  margin-top:10rpx;
 }
 
 
@@ -182,9 +184,24 @@
 .weui-loadmore {
   margin-bottom: 0px;
 }
+.goods-recommend-container{
+  width: 100%;
+  height: 495rpx;
+  display: flex;
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx 24rpx 0 0;
+  background-color: #F2f2f2;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scroll-view_x{
+  width: auto;
+  overflow:hidden;
+}
 .goods-container{
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
   flex-wrap:wrap;
   box-sizing: content-box;
   padding: 24rpx;
@@ -192,11 +209,15 @@
 }
 .goods-box{
   width: 339rpx;
-  height: 472rpx;
+  height: 492rpx;
   background-color: #fff;
   overflow: hidden;
   margin-bottom: 24rpx;
   border-radius:5px;
+}
+.goods-box-space{
+  margin-left: 24rpx;
+  display: inline-block;
 }
 .goods-box .img-box{
   width: 339rpx;
@@ -209,21 +230,35 @@
 }
 .goods-box .goods-title{
   width: 280rpx;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  height: 70rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   font-size: 24rpx;
-  padding: 24rpx 0 0rpx 0;
+  padding: 10rpx 0 0rpx 0;
   color:#000;
-  margin-left: 24rpx;
+  margin-left: 20rpx;
+}
+.goods-box .goods-price-code{
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 14rpx 0;
+  color:#e64340;
+  margin-left: 20rpx;
 }
 .goods-box .goods-price{
-  width: 280rpx;
+  /*width: 280rpx;*/
   overflow: hidden;
-  font-size: 24rpx;
-  padding: 24rpx 0;
+  font-size: 30rpx;
+  padding: 14rpx 0;
   color:#e64340;
-  margin-left: 24rpx;
+}
+.goods-box .goods-sales{
+ margin-left: 15rpx;
+ padding: 24rpx 0;
+ font-size: 20rpx;
+ color: #999;
 }
 
 .pos-fiexd{
