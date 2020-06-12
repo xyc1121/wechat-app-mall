@@ -1,7 +1,7 @@
 <view class="header">
   <view class="search">
     <input type="text" placeholder="输入搜索关键词" value="{{name}}" bindinput="bindinput" bindconfirm="bindconfirm"></input>
-    <image src="/images/icon/search.svg"></image>
+    <image src="/images/icon/search.svg" bindtap="search"></image>
   </view>
   <image class="show-type" src="/images/icon/list{{listType}}.svg" bindtap="changeShowType"></image>
 </view>
@@ -17,9 +17,12 @@
     <navigator url="/pages/goods-details/index?id={{item.id}}"><image class="img" mode="aspectFill" src="{{item.pic}}"></image></navigator>
     <view class="goods-info">
       <view class="title ellipsis"><navigator url="/pages/goods-details/index?id={{item.id}}">{{item.name}}</navigator></view>
-      <view class="price">¥ {{item.minPrice}}</view>
+      <view class="price-box">
+        <view class="price"><span class="goods-price-code">¥</span>{{item.minPrice}}</view>
+        <view class="goods-sales">{{item.numberSells}}人付款</view>
+      </view>
       <view class="buy-info">
-        <view class="num">已售出{{item.numberSells}}件</view>
+        <!--<view class="num">已售出{{item.numberSells}}件</view>-->
         <image class="car" src="/images/icon/car.svg" data-id="{{item.id}}" bindtap="addShopCar"></image>
       </view>
     </view>
@@ -30,9 +33,12 @@
     <navigator url="/pages/goods-details/index?id={{item.id}}"><image class="img" mode="aspectFill" src="{{item.pic}}"></image></navigator>
     <view class="goods-info">
       <view class="title"><navigator url="/pages/goods-details/index?id={{item.id}}">{{item.name}}</navigator></view>
-      <view class="price">¥ {{item.minPrice}}</view>
+      <view class="price-box">
+        <view class="price"><span class="goods-price-code">¥</span>{{item.minPrice}}</view>
+        <view class="goods-sales">{{item.numberSells}}人付款</view>
+      </view>
       <view class="buy-info">
-        <view class="num">{{item.numberOrders}}人已购{{item.numberSells}}件</view>
+        <!--<view class="num">{{item.numberOrders}}人已购{{item.numberSells}}件</view>-->
         <image class="car" src="/images/icon/car.svg" data-id="{{item.id}}" bindtap="addShopCar"></image>
       </view>
     </view>

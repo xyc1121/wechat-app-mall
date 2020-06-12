@@ -1,7 +1,7 @@
 <view class="container">
   <view class="search">
     <input type="text" placeholder="输入搜索关键词" value="{{name}}" bindinput="bindinput" bindconfirm="bindconfirm"></input>
-    <image src="/images/icon/search.svg"></image>
+    <image src="/images/icon/search.svg" bindtap="goSearch"></image>
   </view>
   <view class="content-container">
     <scroll-view class="category-container" scroll-y="true" scroll-with-animation="true">
@@ -40,15 +40,16 @@
         <view class="name ellipsis" data-id='{{item.id}}' bindtap="toDetailsTap">{{item.name}}</view>
         <view class='soldInfo'>
           <view class='good-price-box'>
-            <text class="price">¥{{item.minPrice}}</text>
+            <view class="price"><span class="goods-price-code">¥</span>{{item.minPrice}}</view>
+            <view class="goods-sales">{{item.numberSells}}人付款</view>
           </view>
         </view>
-        <view class='soldInfo'>
+        <!--<view class='soldInfo'>
           <view class='good-sales-box'>
             <text class="number">已售 {{item.numberSells}}件</text>
             <text>评价 +{{item.gotScore}}积分</text>
           </view>
-        </view>
+        </view>-->
         <image data-id="{{item.id}}" bindtap="addShopCar" class="car" src="/images/icon/car.svg"></image>
       </view>
     </scroll-view>

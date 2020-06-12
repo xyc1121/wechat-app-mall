@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    inputVal: "", // 搜索框内容
     categories: [],
     categorySelected: {
       name: '',
@@ -122,6 +123,11 @@ Page({
     this.setData({
       inputVal: e.detail.value
     })
+    wx.navigateTo({
+      url: '/pages/goods/list?name=' + this.data.inputVal,
+    })
+  },
+  goSearch(){
     wx.navigateTo({
       url: '/pages/goods/list?name=' + this.data.inputVal,
     })

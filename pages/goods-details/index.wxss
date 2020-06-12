@@ -28,7 +28,6 @@ swiper-item image {
 .goods-info{
   background-color: #fff;
   padding: 35rpx 0;
-  margin-bottom: 24rpx;
   width: 100%;
   position: relative;
 }
@@ -69,7 +68,9 @@ swiper-item image {
   box-sizing: border-box;
   padding: 0 35rpx;
   font-size: 32rpx;
-  line-height: 1.4;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.5rpx;
   color: #000;
   margin-bottom: 28rpx;
 }
@@ -79,7 +80,7 @@ swiper-item image {
   font-size: 25rpx;
   line-height: 1.4;
   color: #CC0000;
-  margin-bottom: 28rpx;
+  margin-bottom: 30rpx;
 }
 .goods-profile {
   display: flex;
@@ -90,8 +91,12 @@ swiper-item image {
    font-size: 20pt;
    margin-left: 30rpx;
 }
-.goods-profile .p text{
-   font-size: 12pt;
+.goods-profile .goods-price-code{
+  overflow: hidden;
+  font-size: 30rpx;
+  padding: 14rpx 0;
+  color:#e64340;
+  margin-right: 5rpx;
 }
 .goods-profile .r{
    color:#ccc;
@@ -148,7 +153,6 @@ swiper-item image {
   bottom: 0;
   left: 0;
   display: flex;
-  box-shadow:0 0 1rpx 0 ;
   align-items: center;
 }
 .footer-box .contact {

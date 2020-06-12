@@ -231,6 +231,7 @@
 .goods-box .goods-title{
   width: 280rpx;
   height: 70rpx;
+  white-space: normal;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -246,6 +247,7 @@
   padding: 14rpx 0;
   color:#e64340;
   margin-left: 20rpx;
+  margin-right: 5rpx;
 }
 .goods-box .goods-price{
   /*width: 280rpx;*/
@@ -253,6 +255,14 @@
   font-size: 30rpx;
   padding: 14rpx 0;
   color:#e64340;
+}
+.goods-box .goods-original-price{
+  overflow: hidden;
+  font-size: 20rpx;
+  padding: 24rpx 0;
+  color:#aaa;
+  text-decoration:line-through;
+  margin-left: 10rpx;
 }
 .goods-box .goods-sales{
  margin-left: 15rpx;

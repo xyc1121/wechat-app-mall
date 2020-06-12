@@ -16,21 +16,24 @@ page,view,image,input {
   margin-top: 32rpx;
   position: relative;
   width: 700rpx;
-  height: 66rpx;
+  height: 60rpx;
+  font-size: 30rpx;
 }
 .search input {
+  background: rgba(250, 172, 172, 0.8);
   border: 1rpx solid #e3e3e3;
   width: 700rpx;
-  height: 66rpx;
+  height: 50rpx;
   border-radius: 30rpx;
   padding-left: 32rpx; 
 }
 .search image {
-  width: 35rpx;
-  height: 35rpx;
+  width: 30rpx;
+  height: 30rpx;
   position: absolute;
-  top: 16rpx;
-  right: 32rpx;
+  top: 12rpx;
+  right: 20rpx;
+  z-index: 99;
 }
 
 .content-container {
@@ -112,9 +115,15 @@ page,view,image,input {
 
 .goods-container .goods .name {
   color: #000;
-  font-size: 28rpx;
-  line-height: 46rpx;
-  font-weight: bold;
+  font-size: 24rpx;
+  width: 340rpx;
+  height: 70rpx;
+  /*font-weight: bold;*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 35rpx;
 }
 
 .goods-container .goods .soldInfo {
@@ -137,14 +146,28 @@ page,view,image,input {
   line-height: 22rpx;
 }
 
+.goods-container .goods .soldInfo .good-price-box .goods-price-code{
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 14rpx 0;
+  color:#e64340;
+  margin-right: 5rpx;
+}
+
 .goods-container .goods .soldInfo .good-price-box .price {
-  color: #d81e06;
+  color: #e64340;
   margin-top: 10rpx;
-  width: 120rpx;
+  /*width: 120rpx;*/
   font-size: 28rpx;
   font-weight: bold;
   line-height: 40rpx;
 }
+.goods-container .goods .soldInfo .good-price-box .goods-sales{
+  margin-left: 15rpx;
+  padding: 8rpx 0;
+  font-size: 20rpx;
+  color: #999;
+ }
 
 .goods-container .goods .soldInfo .good-sales-box {
   display: flex;
@@ -204,9 +227,9 @@ page,view,image,input {
 }
 .car {
   position: absolute;
-  width: 46rpx;
-  height: 46rpx;
-  bottom: 64rpx;
+  width: 40rpx;
+  height: 40rpx;
+  bottom: 20rpx;
   right: 36rpx;
 }
 
